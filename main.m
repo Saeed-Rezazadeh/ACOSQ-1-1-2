@@ -111,7 +111,7 @@ for delta = [0 5 10]
                     Data = ['codebook_y_1_' num2str(y_1)] ;
                     load (Data) ;
                 end
-                % The first step of the ACOSQ described in Section 4.1 and
+                % The second step of the ACOSQ described in Section 4.1 and
                 % Algorithm 4. In this step a 1-bit COSQ is designed for the conditional source pdf f_u_given_y_1
                 % as computed in line 91.
                 [SDR_2 , D_2(y_1) , hold_T , codebook] = ...
@@ -168,7 +168,7 @@ for delta = [0 5 10]
                         Data = ['codebook_y_1_2_' num2str(y_1_2)] ;
                         load (Data) ;
                     end
-                    % The first step of the ACOSQ described in Section 4.1 and
+                    % The last step of the ACOSQ described in Section 4.1 and
                     % Algorithm 4. In this step a 2-bit COSQ is designed for the conditional source pdf f_u_given_y_1_y_2
                     % as computed in line 148.
                     [SDR_4(k) , D_4(y_1_2) , hold_T , codebook] = ...
