@@ -1,4 +1,4 @@
-%% The script corresponds to the Algorithm 4 with r = ( 1 2 1)
+%% The script corresponds to the Algorithm 4 with r = ( 1 1 2)
 
 clc
 clear all
