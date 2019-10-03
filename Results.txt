@@ -1,0 +1,28 @@
+Overall D_1 = 0.362664
+Overall D_1 = 0.362664
+SDR_1 = 4.404959
+
+rate = 1
+Overall D_2 = 0.117161
+Overall D_2 = 0.117161
+SDR_2 = 9.312160
+Overall D_2 = 0.116890
+Overall D_2 = 0.116890
+SDR_2 = 9.322212
+Final SDR_2 = 9.32
+
+rate = 2
+Overall D_4 = 0.004979
+Overall D_4 = 0.004979
+SDR_4 = 23.028497
+Overall D_4 = 0.019126
+Overall D_4 = 0.019126
+SDR_4 = 17.183755
+Overall D_4 = 0.004930
+Overall D_4 = 0.004930
+SDR_4 = 23.071404
+Overall D_4 = 0.019134
+Overall D_4 = 0.019134
+SDR_4 = 17.182014
+Final SDR_4 = 20.18
+noise = 1
