@@ -87,7 +87,7 @@ for delta = [0 5 10]
         %% COSQ for bit 2 (step 2)
         numLevel = 2 ; 
         for y_1 = 1 : 2
-            % Based on (4.2) compute the source conditional pdf based on the received
+            % Based on (4.8) compute the source conditional pdf based on the received
             % sequence y_1 where y_1 is the channel output corresponding to
             % the transmitted sequence in the first step.
             [f_u_given_y_1] = generate_pdf_step_2(y_1 , T , Pr_1 , f , delta_u ) ;
@@ -98,8 +98,7 @@ for delta = [0 5 10]
                 
                 Pr_z = [(1 - epsilon(i) + delta) / (1 + delta)  , epsilon(i) / (1 + delta) ;
                     (1 - epsilon(i)) / (1 + delta)  , (epsilon(i) + delta) / (1 + delta)] ;
-                Pr_1 = [1 - epsilon(i) , epsilon(i) ;
-                    epsilon(i) , 1 - epsilon(i)] ;
+                
                 if (inner_noise_index == 1)
                     % Find the initial codebook for the conditional source
                     % pdf using splitting algorithm.
@@ -113,7 +112,7 @@ for delta = [0 5 10]
                 end
                 % The second step of the ACOSQ described in Section 4.1 and
                 % Algorithm 4. In this step a 1-bit COSQ is designed for the conditional source pdf f_u_given_y_1
-                % as computed in line 91.
+                % as computed in line 93.
                 [SDR_2 , D_2(y_1) , hold_T , codebook] = ...
                     COSQ_2(f_u_given_y_1 , y_1 , Pr_z , T(: , 1 : 2) , codebook , delta_u) ;
                 
@@ -157,8 +156,7 @@ for delta = [0 5 10]
                     Pr_z = [(1 - epsilon(i) + delta) / (1 + delta)  , epsilon(i) / (1 + delta) ;
                         (1 - epsilon(i)) / (1 + delta)  , (epsilon(i) + delta) / (1 + delta)] ;
                     
-                    Pr_1 = [1 - epsilon(i) , epsilon(i) ;
-                        epsilon(i) , 1 - epsilon(i)] ;
+                    
                     
                     if (inner_noise_index == 1)
                         % Find the initial codebook for the conditional source
